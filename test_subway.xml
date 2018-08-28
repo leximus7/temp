@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metro>
+  <line id="1">
+    <name>Замоскворецкая</name>
+    <stations>
+      <station id="1" name="Ховрино">
+        <links>
+          <link station_id="2"/>
+        </links>
+      </station>
+      <station id="2" name="Речной вокзал">
+        <links>
+          <link station_id="1"/>
+          <link station_id="3"/>
+        </links>
+      </station>
+      <station id="3" name="Водный стадион">
+        <links>
+          <link station_id="2"/>
+          <link station_id="4"/>
+        </links>
+      </station>
+      <!-- ... -->
+      <station id="11" name="Театральная">
+        <links>
+          <link station_id="10"/>
+          <link station_id="12"/>
+          <cross-link station_id="38" line_id="2"/>
+          <cross-link station_id="56" line_id="3"/>
+        </links>
+      </station>
+    </stations>
+  </line>
+  <line id="2">
+    <name>Сокольническая</name>
+    <stations>
+      <!-- ... -->
+      <station id="38" name="Охотный ряд">
+        <links>
+          <link station_id="37"/>
+          <link station_id="39"/>
+          <cross-link station_id="11" line_id="1"/>
+        </links>
+      </station>
+      <!-- ... -->
+    </stations>
+  </line>
+  <line id="3">
+    <name>Арбатско-покровская</name>
+    <stations>
+      <!-- ... -->
+      <station id="56" name="Площадь революции">
+        <links>
+          <link station_id="55"/>
+          <link station_id="57"/>
+          <cross-link station_id="11" line_id="1"/>
+        </links>
+      </station>
+      <!-- ... -->
+    </stations>
+  </line>
+</metro>
